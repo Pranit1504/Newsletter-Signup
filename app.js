@@ -34,7 +34,7 @@ app.post("/",function(req,res){
     const url ="https://us21.api.mailchimp.com/3.0/lists/52537fb33d";
     const options = {
         method : "POST",
-        auth : "pranit:814b1c5830cab974c3153fcf2d48a2b6-us21"
+        auth : "pranit:bbaa0778e6d6a849ab50291b5d6cdacb-us21"
     };
     const request = https.request(url,options,function(response){
         response.on("data",function(data){
@@ -61,5 +61,5 @@ app.listen(3000,function(){
     console.log("Server running!")
 });
 
-//apikey 814b1c5830cab974c3153fcf2d48a2b6-us21
+//apikey bbaa0778e6d6a849ab50291b5d6cdacb-us21
 //audienceid 52537fb33d 
